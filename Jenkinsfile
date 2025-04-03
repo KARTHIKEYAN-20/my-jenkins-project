@@ -16,10 +16,5 @@ pipeline {
                 sh 'python3 -m unittest discover tests/'  // Adjust if needed
             }
         }
-        stage('Generate Report') {
-            steps {
-                sh 'cat report.txt'  // Adjust if needed
-            }
-        }
     }
 }
